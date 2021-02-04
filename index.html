@@ -1,0 +1,121 @@
+<!-- Abgabe von: Luis Rieke, 900762 -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- Metainformationen -->
+    <title>Zinseszins Rechner</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/functions.js" defer async></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- aufmacher der seite -->
+
+        <article id="header">
+            <h1>Finanz-Rechner</h1>
+            <p>Wer richtig investiert, sollte mit dem Zinseszinseffekt arbeiten. 
+                Je länger der Zeitraum, desto stärker die exponentielle Steigung. 
+                Mit einem Zinseszinsrechner kannst du berechnen, 
+                wie viel Endkapital dir der Zinseszins beschert.</p>
+            <button type="button" class="button button1" onclick="location.href='#rechner'">Zum Rechner</button>
+        </article>
+    
+        <!-- vectors illustration -->
+
+        <article id="vectors">
+            <img src="./media/Revenue-bro 1.svg" alt="gewinne durch zinseszins">
+        </article>
+
+        <!-- text erklärung zinses zins -->
+
+        <article id="text">
+            <h2>Der Zinseszins Effekt</h2>
+            <p>Zinseszinsen sind die Art von Zinsen, 
+                die auf Zinsen anfallen. Das kann Kredite betreffen, 
+                aber genau so auch deine Investments. 
+                Die Funktionsweise ist relativ einfach: 
+                Wenn bei einem Investment Zinsen ausgezahlt werden
+                und diese dann wiederum neu reinvestiert werden, 
+                werden auch diese Zinsen verzinst. Bei Aktien geschieht dies automatisch.
+                Der zugrunde leigende Effekt erhöht sich natürlich 
+                über einen langen Zeitraum sehr viel deutlicher.</p>
+            <img id="plant" src="./media/plant.svg" alt="pflanze">
+        </article>
+
+        <!-- design füll element -->
+
+        <article id="design">
+            <img src="./media/design element.svg" alt="design element als platzhalter">
+        </article>
+
+        <!-- rechner -->
+
+        <article id="rechner">
+            <div id="stylized" class="calc-box">
+                <h2>Zinseszins Rechner</h2>
+                <form action="mainForm" id="rechnerForm">
+                    <fieldset>
+                        <p>Hier kannst du deine Finanzplanung für die nächsten Jahre festmachen:</p>
+                        <br>
+
+                        <div class="help-tip">
+                            <p>Das Startkapital, das du gleich am Anfang investieren möchtest 
+                                (kann auch 0€ sein).</p>
+                        </div>
+                        <label for="anfangskapital">Anfangskapital</label>
+                        <input type="number" min="0" step="1" name="anfangskapitalName" id="anfangskapital" size="30" maxlength="30" placeholder="5.000" required>
+            
+                        <div class="help-tip">
+                            <p>Das Geld das du monatlich investieren möchtest
+                                (kann auch 0€ sein).
+                            </p>
+                        </div>
+                        <label for="sparrate">Monatliche Sparrate</label>
+                        <input type="number" min="0" step="1" name="sparrateName" id="sparrate" size="30" maxlength="30" placeholder="100" required>
+            
+                        <div class="help-tip">
+                            <p>Wie viele Jahre möchtest du investieren?</p>
+                        </div>
+                        <label for="spardauer">Spardauer / Anlagezeitraum (in Jahren)</label>
+                        <input type="number" min="0" step="1" name="spardauerName" id="spardauer" size="30" placeholder="10" required>
+            
+                        <div class="help-tip">
+                            <p>Welchen Zinssatz kalkulierst du aufs Jahr? 
+                                Das kann je nach Risikoaffinität sehr unterschiedlich ausfallen.</p>
+                        </div>
+                        <label for="zinssatz">Jährlicher Zinssatz (in Prozent)</label>
+                        <input type="number" min="0" step="1" name="zinssatzName" id="zinssatz" size="30" placeholder="5" required>
+                    </fieldset>
+
+                    <input type="submit" class="button button1" value="Berechnen">
+                </form>
+            </div>
+        </article>
+
+        <!-- newsletter bestellen -->
+
+        <article id="footer">
+        <div id="stylized" class="calc-box">
+            <h4>Links:</h4>
+            <ul>
+                <li>Vektoren von <a href="https://www.freepik.com/">freepik.com</a></li>
+                <li>Webdesign durch <a href="http://spacifik.de/">spacifik.de</a></li>
+                <li>Weitere spannende Finanzthemen auf <a href="https://fynancialist.de/">fynancialist.de</a></li>
+            </ul>
+        </div>
+    </article>
+
+    </main>
+
+</body>
+
+</html>

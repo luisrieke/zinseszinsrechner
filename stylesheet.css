@@ -1,0 +1,617 @@
+/* normalize.css
+========================================================================== */
+
+html {
+line-height: 1.15; /* 1 */
+-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+
+/**
+* Remove the margin in all browsers.
+*/
+
+body {
+margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+
+main {
+display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+
+/* Grouping content
+    ========================================================================== */
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+
+hr {
+box-sizing: content-box; /* 1 */
+height: 0; /* 1 */
+overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+pre {
+font-family: monospace, monospace; /* 1 */
+font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+    ========================================================================== */
+
+/**
+* Remove the gray background on active links in IE 10.
+*/
+
+a {
+background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+
+abbr[title] {
+border-bottom: none; /* 1 */
+text-decoration: underline; /* 2 */
+text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+
+b,
+strong {
+font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp {
+font-family: monospace, monospace; /* 1 */
+font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+
+small {
+font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+
+sub,
+sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+
+sub {
+bottom: -0.25em;
+}
+
+sup {
+top: -0.5em;
+}
+
+/* Embedded content
+    ========================================================================== */
+
+/**
+* Remove the border on images inside links in IE 10.
+*/
+
+img {
+border-style: none;
+}
+
+/* Forms
+    ========================================================================== */
+
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+font-family: inherit; /* 1 */
+font-size: 100%; /* 1 */
+line-height: 1.15; /* 1 */
+margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+
+button,
+input { /* 1 */
+overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+-webkit-appearance: button;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+
+fieldset {
+padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+
+legend {
+box-sizing: border-box; /* 1 */
+color: inherit; /* 2 */
+display: table; /* 1 */
+max-width: 100%; /* 1 */
+padding: 0; /* 3 */
+white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+
+progress {
+vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+
+textarea {
+overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+
+[type="checkbox"],
+[type="radio"] {
+box-sizing: border-box; /* 1 */
+padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+-webkit-appearance: textfield; /* 1 */
+outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+-webkit-appearance: button; /* 1 */
+font: inherit; /* 2 */
+}
+
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+
+details {
+display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+
+summary {
+display: list-item;
+}
+/**
+* Add the correct display in IE 10+.
+*/
+
+template {
+display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+
+[hidden] {
+display: none;
+}
+
+/* AB HIER EIGENER CODE DER normalize.css ÜBERSCHREIBT
+========================================================================== */
+
+/* Regeln für alle Auflösungen */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --block-bg-color: rgb(255, 255, 255);
+    --dark-green-color: rgb(39, 174, 96);
+    --light-green-color: rgb(111, 207, 151);
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+/* Pflanze unten rechts positioniert */
+
+#plant{
+    margin-left: auto;
+    padding: 40px;
+}
+
+/* Forms responsive */
+
+#stylized input {
+    width: 100%;
+}
+
+#stylized input[type="radio"], #stylized input[type="checkbox"]{
+    width: auto;
+}
+
+/* Styling der Help Animation */
+
+.help-tip{
+    position: relative;
+    text-align: center;
+    background-color: #92E3A9;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 12;
+}
+
+.help-tip p:before{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    left:4px;
+    top:-12px;
+}
+
+.help-tip p:after{
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+/* CSS animation */
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+/*Bei fehlerhaftem Input*/
+
+.message{
+	color: hsla(0,100%,30%,1);
+	text-decoration: underline;
+}
+
+.rechnerOutput{
+    color: var(--dark-green-color);
+    font-size: 40px;
+}
+
+/* Regeln für den großen viewport */
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h2,
+h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-right: auto;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+article{
+    background: var(--block-bg-color);
+    padding: 0%
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(118, 118, 118);
+}
+
+/* Button style */
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    margin-top: 40px;
+}
+  
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Header Bild rechtsbündig */
+
+#vectors img{
+    margin-left: auto;
+}
+
+/* hier wird das grid Layout angelegt */
+
+main{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "header vectors"
+                        "design  rechner"
+                        "footer  textarea";
+    grid-template-rows: 0.6fr 0.1fr 1fr;
+    grid-row-gap: 32px;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 32px;
+}
+
+#header{
+    grid-area: header;
+    padding: 14%;
+}
+
+#vectors{
+    grid-area: vectors;
+    align-self: center;
+}
+
+#text{
+    grid-area: textarea;
+    padding: 14%;
+}
+
+#design{
+    grid-area: design;
+    align-self: center;
+}
+
+#rechner{
+    grid-area: rechner;
+    padding: 14%;
+}
+
+#footer{
+    grid-area: footer;
+    padding: 14%;
+    background-color: var(--light-green-color);
+    border-radius: 0px 200px 0px 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Regeln für den kleinen viewport / mobiles Endgerät */
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    h3,code{
+        font-size: 1.3rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+
+    main{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "header"
+                            "vectors"
+                            "rechner"
+                            "textarea"
+                            "footer";
+        grid-template-rows: repeat(1, 1fr);
+        grid-row-gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 32px;
+    }
+    
+    #header{
+        grid-area: header;
+    }
+    
+    #vectors{
+        grid-area: vectors;
+    }
+    
+    #text{
+        grid-area: textarea;
+    }
+    
+    #design{
+        display: none;
+    }
+    
+    #rechner{
+        grid-area: rechner;
+    }
+
+    #footer{
+        grid-area: footer;
+        border-radius: 0;
+    }
+
+}
